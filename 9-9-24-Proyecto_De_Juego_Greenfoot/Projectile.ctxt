@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=Projectile
+comment0.text=\r\nSpace\ Game*****************\r\n\ \r\n\ \ Ejercicio\ de\ Uso\ Libre\r\n\ \r\n\ \ No\ se\ permite\ la\ comercializacion\ de\ este\ codigo.\r\n\ \r\n\ \ Realizar\ ejercicio\ de\ programacion\ de\ juego,\ \r\n\ \ en\ el\ cual\ veremos\ con\ programacion\ Orienta\ a\ Objeto\ en\ Java\r\n\ \ Los\ elementos\ necesarios\ para\ aprender\ a\ programar.\r\n\ \ Este\ ejercicio\ puede\ mejorarse\ aun\ mas\ en\ cuestion\ de\ codigo\r\n\ \r\n\ @author\ Anderson\ Camacho\ \r\n\ @email\:\ camachosinh@gmail.com\r\n\ @version\ general\ 1.5\r\n\ \r\n\ nota\:\ falta\ docuemtnar\ despues\ despues\ de\ enemigos.\r\n\ \r\n\ Nota\ del\ desarrollador\:\r\n\ \r\n\ Este\ codigo\ fue\ tomado\ de\ canal\ de\ o\ youtube\ Coding\ Club\ \r\n\ (https\://www.youtube.com/c/CodingClub/about)\ y\ se\ \r\n\ actualizando\ elementos\ a\ codigo\ estandarizado.\ \r\n
+comment1.params=
+comment1.target=Projectile()
+comment1.text=\r\n\ Constructor\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Metodos\ Action\ que\ se\ ejecuta\ siempre\ que\ el\ objeto\ exista\r\n
+comment3.params=
+comment3.target=void\ prepare()
+comment3.text=\r\n\ Metodo\ preparacion\ de\ los\ elementos\ de\ esta\ Clase\r\n
+comment4.params=
+comment4.target=void\ projectileMove()
+comment4.text=\r\n\ Metodos\ de\ Projectile\ completos\ y\ con\ elementos\ completos\ no\ estandares.\r\n
+comment5.params=
+comment5.target=void\ removeFromWorld()
+numComments=6
