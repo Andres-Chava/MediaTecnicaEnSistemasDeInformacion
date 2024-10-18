@@ -1,0 +1,18 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Escribe una palabra: ");
+        String texto = teclado.nextLine();
+        
+        if(texto.equals("hola")){
+        System.out.println("Hola Mundo");
+        } else {
+            System.out.println("Me merezco un 5");
+        }
+    }
+}
