@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        
+        Scanner teclado = new Scanner(System.in);
+        int tamano;
+        do {
+        System.out.println("Ingrese el numero de estudiantes: ");
+        tamano = teclado.nextInt();
+        teclado.nextLine();
+        
+        if (tamano <= 0){
+        System.out.println("\nNumero no valido. Intente de nuevo.");
+        }
+        } while (tamano <=0);
+        
+        String nombre[] = new String [tamano];
+        String apellido[] = new String [tamano];
+        
+        for (int i = 0; i < nombre.length; i++){
+            
+            System.out.print("Ingrese el nombre del estudiante numero " + (i + 1) + ": ");
+            nombre[i] = teclado.nextLine();
+            
+            System.out.print("Ingrese el apellido del estudiante numero " + (i + 1) + ": ");
+            apellido[i] = teclado.nextLine();
+        }
+        
+        System.out.println("Los nombres ingresados fueron: ");
+        
+        for (int i = 0; i < nombre.length; i++){
+            System.out.println("Estudiante " + (i + 1) + ": " + nombre[i] + (" ") + apellido[i]);
+        }
+    }
+}
