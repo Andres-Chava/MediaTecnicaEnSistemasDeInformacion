@@ -1,24 +1,26 @@
 import java.util.Scanner;
-
+import java.text.DecimalFormat;
 class HelloWorld {
     public static void main(String[] args) {
         
         Scanner teclado = new Scanner(System.in);
         int tamano;
         do {
-        System.out.println("Ingrese el numero de estudiantes: ");
-        tamano = teclado.nextInt();
-        teclado.nextLine();
-        System.out.println(" ");
+            System.out.println("Ingrese el numero de estudiantes: ");
+            tamano = teclado.nextInt();
+            teclado.nextLine();
+            System.out.println(" ");
         
-        if (tamano <= 0){
-        System.out.println("\nNumero no valido. Intente de nuevo.");
-        }
+            if (tamano <= 0){
+                System.out.println("\nNumero no valido. Intente de nuevo.");
+            }
         } while (tamano <=0);
         
         String nombre[] = new String [tamano];
         String apellido[] = new String [tamano];
         double notas[][] = new double [tamano][3];
+        DecimalFormat df = new DecimalFormat("#.##");
+        
         for (int i = 0; i < nombre.length; i++){
             
             System.out.print("Ingrese el nombre del estudiante numero " + (i + 1) + ": ");
@@ -39,11 +41,18 @@ class HelloWorld {
         System.out.println("Los nombres ingresados fueron: ");
         System.out.println(" ");
         
+        double notaDefinitiva;
+        
         for (int i = 0; i < nombre.length; i++){
+            notaDefinitiva = 0;
             System.out.println("Estudiante " + (i + 1) + ": " + nombre[i] + (" ") + apellido[i]);
             for (int j = 0; j < notas[i].length; j++){
-            System.out.println("Sus notas son: " + notas[i][j]);
+                System.out.println("Su nota #" + (j + 1) + ": " + notas[i][j]);
+                notaDefinitiva = notaDefinitiva + notas[i][j];
+                notaDefinitiva = notaDefinitiva/3;
             }
+            System.out.print("La nota definitiva es: ");
+            System.out.println(df.format(notaDefinitiva));
             System.out.println(" ");
         }
     }
