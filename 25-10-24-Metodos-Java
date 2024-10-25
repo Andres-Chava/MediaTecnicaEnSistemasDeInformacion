@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a, b;
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Escribe el número 1: ");
+        a = scan.nextInt();
+        System.out.println("Escribe el número 2: ");
+        b = scan.nextInt();
+
+        System.out.println("La suma de " + a + " y " + b + " es: " + add(a, b));
+        System.out.println("La resta de " + a + " y " + b + " es: " + sub(a, b));
+        System.out.println("La multiplicación de " + a + " y " + b + " es: " + mult(a, b));
+        if (b == 0){
+            System.out.println("La división no se puede realizar, pues no es posible dividir entre 0.");
+        }
+        else {
+            System.out.println("La división de " + a + " y " + b + " es: " + div(a, b));
+        }
+        
+    }
+
+    public static int add(int a, int b){
+        int c = a + b;
+        return c;
+    }
+
+    public static int sub(int a, int b){
+        int c = a - b;
+        return c;
+    }
+
+    public static int mult(int a, int b){
+        int c = a * b;
+        return c;
+    }
+    
+    public static int div(int a, int b){
+        int c = a/b;
+        return c; 
+    }
+}
